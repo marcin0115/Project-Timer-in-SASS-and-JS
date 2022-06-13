@@ -1,0 +1,22 @@
+body 
+    margin: 0
+    padding: 0
+    background-color: #04929c
+    nav 
+        +navPosition(70px)
+        button 
+            padding: 12px 32px
+            font-size: (15px + 12)
+            background-color: #2c2a2a
+            color: #fff
+            border: 2px solid #c9ac06
+            cursor: pointer
+            &:hover 
+                background-color: #411515
+        .start 
+            margin-right: $margin-size
+        .correct
+            @extend button
+            border-color: #02a71f
+        .reset
+            margin-left: $margin-size
